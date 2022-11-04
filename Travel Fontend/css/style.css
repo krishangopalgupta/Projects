@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Montserrat:ital,wght@0,400;0,600;1,200&family=Poppins:wght@700&family=Roboto:ital,wght@0,400;1,300&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Macondo Swash Caps', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/* ############## Header Styling ##############*/
+
+.container{
+    max-width: 1100px;
+    /* for giving side space  */
+    width: 90%;
+    margin: 0px auto;
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+.header{
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../Img/header-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.nav-items .nav-item a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    margin-left: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+
+h1,h2,h3{
+    margin-bottom: 0.3em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* ####################### UTILITY CLASSES ############ */
+.lg-heading{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.md-heading{
+    font-size: 1rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    color: #555;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0.5em 0;
+    text-decoration: none;
+    color: #343434;
+}
+
+/* ############ BUTTON STYLING ############## */
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 4em;
+}
+
+
+.btn-secondary{
+    display: inline-block;
+    padding: 0 1em;
+    border:2px solid red;
+    border-radius: 10em;
+}
+
+.btn-secondary:hover{
+    background-color: #ddd;
+}
+
+
+/* #################Navbar Designing ################# */
+
+.navbar {
+    overflow: hidden;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.nav-items .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    list-style-type: none;
+}
+
+
+.navbar .logo{
+    float: left;
+}
+
+.navbar .nav-items{
+    margin-top: 1rem;
+    float: right;
+}
+
+.navbar a:link, .navbar a:visited{
+    color: #f4f4f4;
+}
+
+/* LINK HOVER*/
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+/* ############## HEADER CONTENT ############## */
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p{
+    text-transform: uppercase;
+}
+
+.header .header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* ############## SHOWCASE SECTION ############# */
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 280px;
+    overflow: scroll;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.849);
+}
+
+/* OR INSTEAD OF OVERFLOW */
+.row::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.row1{
+    margin-bottom: 10rem;
+    box-shadow: 0 0 20 #aaa;
+}
+
+.row1 .img-box, .row2 .text-box{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.row1 .text-box, .row2 .img-box{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+/* ################ SHOCASE IMAGE #################### */
+.row .img-box img{
+    display: inline-block;
+
+    /* For Mentaining the aspect ratio we use object-fit cover property */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.showcase .text-box{
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+
+.crimson{
+    color: crimson;
+}
+
