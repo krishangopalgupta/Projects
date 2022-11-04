@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Poppins:ital,wght@0,200;1,300&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Macondo Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c9ee8;
+    min-height: 100vh;
+}
+.container{
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    flex-direction: column;
+    /* max-width: 400px; */
+    width: 500px;
+    height: 300px;
+}
+
+.container img{
+    margin-top: 5px;
+}
+
+.container .content .disable{
+    opacity: 0.4;
+    pointer-events: none;
+}
+.container .content{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.container .content select{
+    padding:  1rem;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.container .btn{
+    min-width: 50%;
+    margin: 10px auto;
+    border-radius: 15px;
+    outline:none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    background-color: #0c9ee8;
+    height: 50px;
+}
+
