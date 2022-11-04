@@ -1,0 +1,83 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Poppins:ital,wght@0,200;1,300&family=Roboto:ital,wght@0,400;1,300&display=swap');
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Macondo Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
+    gap: 30px;
+    background: #1d2b3a;
+}
+
+.inputBox{
+    width: 250px;
+    position: relative;
+}
+
+.inputBox input{
+    width: 100%;
+    padding: 10px;   
+    border: 1px solid rgba(255,255,255,0.25);
+    background: #1d2b3a;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.inputBox span{
+    position: absolute;
+    left: 0px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(233, 221, 221, 0.492);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~span, .inputBox input:focus ~span{
+    color : #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size:0.65em;
+    padding: 0px 10px;
+    background : #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #10cbb5;
+    letter-spacing: 0.3em;
+}
+
+.inputBox  input:valid, .inputBox input:focus 
+{
+    border: 1px solid #00dfc4;
+}
+ */
+
+
+ .full{
+    height: 100vh;
+    /* border: 2px solid black; */
+}
+.container{
+    display: block;
+    /* border: 2px solid red; */
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 0% 50% 50% 0%/ 0% 50% 50% 0%;
+    /* background-image: linear-gradient(to right, rgba(251,123,153,0.5),(111,123,211,0.3)); */
+    column-rule: var(--red);
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    
+}
