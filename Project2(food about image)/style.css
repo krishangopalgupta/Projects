@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+}
+
+ .header img{ 
+    /* background: url('../Project2/Image/food_image.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header .section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+
+.header h1{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.header p{
+    font-size: larger;
+    
+}
+
+.form input[type="submit"], form input[type="text"]{
+    border-radius: 2rem;
+}
+
+input[type="text"]{
+    display: block;
+    margin: 1rem auto;
+    padding: 0.4rem 5rem;
+}
+input[type="submit"]{
+    padding: 0.4rem 1rem;
+    background: #ababab;
+}
+
+.footer{
+    border: 2px solid  red;
+}
+
+.footer p{
+    border: 2px solid black;
+}
+
+.footer .threeImage{
+    width: 100px; 
+    float: left.;
+    display: inline-block;
+    height: 100px;
+    background-color: blue;
+}
+

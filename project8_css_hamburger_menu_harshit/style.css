@@ -1,0 +1,107 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    background-color: rgb(10, 11, 10);
+}
+
+.header h1 .logo-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+    min-height: 70px;
+}
+
+.navbar .nav-items{
+    display: flex;
+    cursor: pointer;
+    /* width: 250px; */
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-items .nav-item{
+    list-style-type: none;
+}
+
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+.hamburger{
+        display: none;
+    cursor: pointer;
+}
+
+.hamburger .row{
+    display: block;
+    width: 30px;
+    height: 4px;
+    border: 2px solid red;
+    border: 2px solid #fff;
+    /* font-size: 1.2rem; */
+    margin: 5px auto;
+    border: 2px solid #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: white  ;
+}
+
+@media (max-width:600px) {
+    .hamburger{
+        border: 2px solid blue;
+        display: block;
+    }
+    .hamburger.active .row:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .row:nth-child(1){
+         transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger.active .row:nth-child(3){
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .nav-items{
+        border: 2px solid red;
+        position: fixed;
+        /* border: 2px solid red; */
+        /* both are meaningful same  */
+        left: -100%;
+        /* right: 100%; */
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transform: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-items.active{
+        left:  0;
+    }
+}

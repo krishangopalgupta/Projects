@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Montserrat:ital,wght@0,400;0,600;1,200&family=Poppins:ital,wght@0,200;0,700;1,400;1,500&family=Roboto:ital,wght@0,400;1,300&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Macondo Swash Caps", cursive;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ############UTILITY CLASSES #############  */
+.container {
+  max-width: 1000px;
+  width: 80%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  font-size: 2rem;
+  outline: none;
+  margin-top: 1em;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+/* ###############Navbar Styling #################### */
+
+/* for desktop Mode  */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  /* box-shadow: 0px 10px 50px 0px rgba(170, 170, 170, 0.341); */
+  background: #fff;
+  color: #000;
+  width: 100%;
+  position: fixed;
+  opacity: 0.85;
+  z-index: 99;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+}
+
+.logo {
+  font-size: 3rem;
+  cursor: pointer;
+  order: 1;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  order: 2;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.3s ease-in-out;
+}
+.menu-items li a:hover {
+  color: #52ee98;
+}
+/* #####################Navbar Banner################# */
+.showcase-area {
+  background-image: linear-gradient(
+      rgba(240, 240, 240, 0.3),
+      rgba(255, 255, 235, 0.2)
+    ),
+    url("./img/header-image2.jpg");
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  /* position: relative; */
+}
+.showcase-container {
+  /* both are same using flexbox  */
+  /* display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+
+  /* using flex box position should be relative in parent */
+
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+
+  /* all are same  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.showcase-container h1 {
+  font-size: 3rem;
+  color: #454545;
+  margin-bottom: 1rem;
+}
+
+/* ########About US############### */
+.about {
+  padding: 50px 40px;
+  background: rgba(255, 255, 255, 0.636);
+}
+.about-wrapper {
+  box-shadow: 0px 10px 50px 0px rgba(170, 170, 170, 0.345);
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-text .small {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.about-text h2 {
+  font-size: 3.2rem;
+}
+.about-text p {
+  font-size: 1.6rem;
+  color: rgb(85, 85, 85);
+}
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translateX(-120%);
+  animation: about-text-animation 0.3s ease-in-out forwards;
+}
+.about-image {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(120%);
+  animation: about-img-animation 0.4s ease-in-out forwards;
+}
+@keyframes about-text-animation {
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes about-img-animation {
+  100% {
+    transform: translateX(0%);
+  }
+}
+.about-image img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  height: 400px;
+  object-fit: cover;
+  object-position: right;
+}
+
+/* this media query is from my side */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+  .about-text,
+  .about-image {
+    padding: 10px;
+  }
+
+  .about-image img {
+    object-position: right-(5px);
+  }
+}
+
+/* ################TYPES OF FOOD ###################  */
+#food {
+  background: rgb(255, 255, 255);
+  box-shadow: 10px 10px 20px 0px #aaa;
+  padding: 5rem 0rem 10rem 0rem;
+}
+#food h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.food-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.food-container img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+  max-height: 300px;
+  flex: 1 300px;
+}
+.image-container{
+  margin: 0px 0.5rem;
+  position: relative;
+  flex-grow: 1;
+}
+.img-content{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+}
+.img-content h3{
+  color: #fff;
+  font-size: 3rem;
+}
+.img-content a{
+  font-size: 1.2rem;
+}
+ .image-container::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.9);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 3s ease-in-out;
+}
+.image-container:hover{
+  top: 0px;
+ }

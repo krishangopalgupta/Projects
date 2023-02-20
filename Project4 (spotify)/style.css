@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+/* nav{
+    position: sticky;
+} */
+nav ul{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    list-style-type: none;
+    background-color: black;
+    height: 60px;
+    color: white;
+}
+
+nav ul li{
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.logo img{
+    width: 100px;
+    padding: 0px 1rem;
+    margin-left: 1.3rem;
+    
+}
+
+.container{
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+     width: 70%;
+     border-radius: 12px;
+     padding: 34px;
+     margin: 35px auto;
+     background: url('./headphone.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+.container .rightImage{
+    width: 200px;
+    float: right;
+    top: 0%;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bottom{
+    position: sticky;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar{
+    width: 80vw;
+}
+
+.bottom input[type="range"]{
+    cursor: pointer;
+}
+
+.icons{
+    margin: 0.2rem;
+}
+
+.icons i{
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.songlist{
+    margin-top: 1rem;
+    display: flex;
+    height: 40px;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    border-radius: 12px;
+}
+
+.songlist img{
+    width: 30px;
+    margin-left: 4px;
+    border-radius: 12px;
+}
+
+.songlist i{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    position: absolute;
+    left: 1vw;
+    /* color:whitesmoke;
+    background-color: white; */
+    transition: opacity 0s ease-in;
+}
+
